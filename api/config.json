@@ -1,0 +1,14 @@
+{
+    "tag": "ATL'14",
+    "title": "Agile Tour London 2014",
+
+    "menu": [
+        {"tag": "", "name": "Home"},
+        {"tag": "speakers", "name": "Speakers"},
+        {"tag": "talks", "name": "Talks"},
+        {"tag": "program", "name": "Program"},
+        {"tag": "contact", "name": "Contact"},
+
+        {"tag": "na", "name": "Not implemented", "hidden": true}
+    ]
+}

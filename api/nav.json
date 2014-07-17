@@ -1,0 +1,7 @@
+[
+    {"id": 1, "state": ".home", "display": "Home"},
+    {"id": 2, "state": ".speakers", "display": "Speakers"},
+    {"id": 3, "state": ".talks", "display": "Talks"},
+    {"id": 4, "state": ".program", "display": "Program"},
+    {"id": 5, "state": ".contact", "display": "Contact"}
+]

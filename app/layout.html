@@ -1,0 +1,22 @@
+<!--
+  ~ Copyright (c) 2014 dagimos.  All rights reserved.
+  -->
+
+<!-- top level layout for app -->
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li class="brand">ngPlunk</li>
+            <li ng-repeat="nav in navs" ui-sref-active="active">
+                <a ui-sref="{{nav.state}}">{{nav.display}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="span12 ui-view-container">
+        <!-- each app.something state renders here -->
+        <div class="animated-view" ui-view></div>
+    </div>
+</div>
