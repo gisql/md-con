@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2014 dagimos.  All rights reserved.
+ */
 
 'use strict';
 
@@ -33,18 +36,22 @@ angular
                 }
             })
             .state('mdConApp.home', {
+                url: '/',
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
             })
             .state('mdConApp.program', {
+                url: '/program',
                 templateUrl: 'views/program.html',
                 controller: 'ProgramCtrl'
             })
             .state('mdConApp.speakers', {
+                url: '/speakers',
                 templateUrl: 'views/speakers.html',
                 controller: 'SpeakersCtrl'
             })
             .state('mdConApp.talks', {
+                url: '/talks',
                 templateUrl: 'views/talks.html',
                 controller: 'TalksCtrl'
             });
@@ -56,4 +63,5 @@ angular
     .run(function ($state, $log) {
         $log.info('inside run');
         $state.go('mdConApp.home');
+        $log.info('after calling go');
     });

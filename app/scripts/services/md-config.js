@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2014 dagimos.  All rights reserved.
+ */
 
 'use strict';
 
@@ -9,11 +12,9 @@
  * Factory in the mdConApp.
  */
 angular.module('mdConApp')
-    .factory('mdConfig', ['$http', function ($http, $log) {
+    .factory('mdConfig', ['$http', function ($http) {
         function requestConfig() {
-            $log.info('requesting data');
             return $http.get('/api/nav.json').then(function (res) {
-                $log.info('resolving data');
                 return res.data;
             });
         }
